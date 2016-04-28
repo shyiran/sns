@@ -1527,6 +1527,8 @@ class ConfigAction extends AdministratorAction {
 				'title' => L ( 'PUBLIC_ADD' ),
 				'onclick' => "admin.updateLangContent(0)" 
 		);
+		dump($this->pageButton);
+        exit();
 		// 删除语言配置内容按钮
 		$this->pageButton [] = array (
 				'title' => L ( 'PUBLIC_STREAM_DELETE' ),
