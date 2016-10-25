@@ -3018,33 +3018,6 @@ return array (
       'nums' => '',
     ),
   ),
-  'admin_Task_taskConfig' => 
-  array (
-    'key' => 
-    array (
-      'task_switch' => 'task_switch',
-    ),
-    'key_name' => 
-    array (
-      'task_switch' => '任务状态',
-    ),
-    'key_type' => 
-    array (
-      'task_switch' => 'radio',
-    ),
-    'key_default' => 
-    array (
-      'task_switch' => '',
-    ),
-    'key_tishi' => 
-    array (
-      'task_switch' => '',
-    ),
-    'key_javascript' => 
-    array (
-      'task_switch' => '',
-    ),
-  ),
   'tipoff_Admin_dealUser' => 
   array (
     'key' => 
@@ -5400,69 +5373,6 @@ return array (
       'cloud_image_prefix_urls' => '',
       'cloud_image_admin' => '',
       'cloud_image_password' => '',
-    ),
-  ),
-  'admin_Medal_addUserMedal' => 
-  array (
-    'key' => 
-    array (
-      'user' => 'user',
-      'medal' => 'medal',
-      'attach_id' => 'attach_id',
-      'attach_small' => 'attach_small',
-      'medal_name' => 'medal_name',
-      'medal_desc' => 'medal_desc',
-      'desc' => 'desc',
-    ),
-    'key_name' => 
-    array (
-      'user' => '用户名',
-      'medal' => '选择勋章',
-      'attach_id' => '上传勋章大图',
-      'attach_small' => '上传勋章小图',
-      'medal_name' => '勋章名称',
-      'medal_desc' => '勋章描述',
-      'desc' => '颁发描述',
-    ),
-    'key_type' => 
-    array (
-      'user' => 'user',
-      'medal' => 'select',
-      'attach_id' => 'image',
-      'attach_small' => 'text',
-      'medal_name' => 'text',
-      'medal_desc' => 'text',
-      'desc' => 'text',
-    ),
-    'key_default' => 
-    array (
-      'user' => '',
-      'medal' => '',
-      'attach_id' => '',
-      'attach_small' => '',
-      'medal_name' => '',
-      'medal_desc' => '',
-      'desc' => '',
-    ),
-    'key_tishi' => 
-    array (
-      'user' => '',
-      'medal' => '',
-      'attach_id' => '100x100',
-      'attach_small' => '30x30',
-      'medal_name' => '',
-      'medal_desc' => '',
-      'desc' => '',
-    ),
-    'key_javascript' => 
-    array (
-      'user' => '',
-      'medal' => 'admin.addmedal(this.value)',
-      'attach_id' => '',
-      'attach_small' => '',
-      'medal_name' => '',
-      'medal_desc' => '',
-      'desc' => '',
     ),
   ),
   'support_Admin_index' => 
@@ -8659,6 +8569,96 @@ return array (
     'key_javascript' => 
     array (
       'switch' => '',
+    ),
+  ),
+  'admin_Medal_addUserMedal' => 
+  array (
+    'key' => 
+    array (
+      'user' => 'user',
+      'medal' => 'medal',
+      'attach_id' => 'attach_id',
+      'attach_small' => 'attach_small',
+      'medal_name' => 'medal_name',
+      'medal_desc' => 'medal_desc',
+      'desc' => 'desc',
+    ),
+    'key_name' => 
+    array (
+      'user' => '用户名',
+      'medal' => '选择勋章',
+      'attach_id' => '上传勋章大图',
+      'attach_small' => '上传勋章小图',
+      'medal_name' => '勋章名称',
+      'medal_desc' => '勋章描述',
+      'desc' => '颁发描述',
+    ),
+    'key_type' => 
+    array (
+      'user' => 'user',
+      'medal' => 'select',
+      'attach_id' => 'image',
+      'attach_small' => 'image',
+      'medal_name' => 'text',
+      'medal_desc' => 'text',
+      'desc' => 'text',
+    ),
+    'key_default' => 
+    array (
+      'user' => '',
+      'medal' => '',
+      'attach_id' => '',
+      'attach_small' => '',
+      'medal_name' => '',
+      'medal_desc' => '',
+      'desc' => '',
+    ),
+    'key_tishi' => 
+    array (
+      'user' => '',
+      'medal' => '',
+      'attach_id' => '100x100',
+      'attach_small' => '30x30',
+      'medal_name' => '',
+      'medal_desc' => '',
+      'desc' => '',
+    ),
+    'key_javascript' => 
+    array (
+      'user' => '',
+      'medal' => 'admin.addmedal(this.value)',
+      'attach_id' => '',
+      'attach_small' => '',
+      'medal_name' => '',
+      'medal_desc' => '',
+      'desc' => '',
+    ),
+  ),
+  'admin_Task_taskConfig' => 
+  array (
+    'key' => 
+    array (
+      'task_switch' => 'task_switch',
+    ),
+    'key_name' => 
+    array (
+      'task_switch' => '任务状态',
+    ),
+    'key_type' => 
+    array (
+      'task_switch' => 'radio',
+    ),
+    'key_default' => 
+    array (
+      'task_switch' => '',
+    ),
+    'key_tishi' => 
+    array (
+      'task_switch' => 'wdwdwd',
+    ),
+    'key_javascript' => 
+    array (
+      'task_switch' => '',
     ),
   ),
 );

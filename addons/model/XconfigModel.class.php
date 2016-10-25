@@ -51,12 +51,13 @@ class XconfigModel extends Model {
 	 */
 	public function pagekey_get($key) {
 		$key = $this->_strip_key($key);	
-		
+	
 		$keys = explode(':', $key);
 		static $_res = array();
 		if(isset($_res[$key])) {
 			return $_res[$key];
 		}
+		
 		$list = $this->pagekey_lget($keys[0]);
 		return $list ? $list[$keys[1]] : '';
 	}

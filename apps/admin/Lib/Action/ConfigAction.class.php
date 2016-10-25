@@ -97,6 +97,7 @@ class ConfigAction extends AdministratorAction {
 		}
 		
 		$theme_name = C ( 'THEME_NAME' );
+
 		if (isset ( $detailData ['site_theme_name'] ) && ! empty ( $theme_name )) {
 			$detailData ['site_theme_name'] = $theme_name;
 		}
@@ -106,8 +107,8 @@ class ConfigAction extends AdministratorAction {
 		
 		$this->assign ( 'filesShow', $filesShow );
 		
-		$this->onload [] = 'admin.siteConfigDefault(' . $detailData ['site_closed'] . ')';
-
+		$this->onload [] = 'admin.siteConfigDefault(' . $detailData ['site_closed'] . ')';	
+		
 		$this->displayConfig ( $detailData );
 	}
 	
@@ -1527,8 +1528,6 @@ class ConfigAction extends AdministratorAction {
 				'title' => L ( 'PUBLIC_ADD' ),
 				'onclick' => "admin.updateLangContent(0)" 
 		);
-		dump($this->pageButton);
-        exit();
 		// 删除语言配置内容按钮
 		$this->pageButton [] = array (
 				'title' => L ( 'PUBLIC_STREAM_DELETE' ),

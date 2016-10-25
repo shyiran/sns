@@ -184,10 +184,8 @@ class AdministratorAction extends Action {
      *
      */
     public function displayConfig($detailData = false){
-
         //页面Key配置保存的值
         $this->_assignPageKeyData($detailData);
-
         $this->display(THEME_PATH.'/admin_config.html');
     }
 
@@ -262,14 +260,12 @@ class AdministratorAction extends Action {
     private function _assignPageKeyData($detailData = false){
 
     	$pageKeyData = model('Xconfig')->pagekey_get('pageKey:'.$this->pageKey);
-       
         $this->assign('pageKeyData',$pageKeyData);
 
 
         if($detailData === false){
             $detailData = model('Xdata')->get($this->systemdata_list.":".$this->systemdata_key);
         }
-
         $this->assign('detailData',$detailData);
     }
     /*

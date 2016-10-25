@@ -244,7 +244,6 @@ class UserAction extends AdministratorAction {
 		ksort($categoryList);
 		$this->opt['user_category'] = $categoryList;
 		//$this->opt['department_id'] = model('Department')->getHashDepartment();
-
 		// 列表key值 DOACTION表示操作
 		switch(strtolower($type)) {
 			case 'index':
@@ -489,7 +488,6 @@ class UserAction extends AdministratorAction {
 		$this->savePostUrl = U('admin/User/doAddUser');
         $this->notEmpty = array('email','uname','password','user_group');
         $this->onsubmit = 'admin.addUserSubmitCheck(this)';
-
 		$this->displayConfig();
 	}
 

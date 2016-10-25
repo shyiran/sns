@@ -51,6 +51,7 @@ class XdataModel extends Model {
 	 * @return array 参数列表
 	 */
 	public function lget($list_name = '', $nostatic = false) {
+	    
 		$list_name = $this->_strip_key($list_name);
 
 		static $_res = array();
@@ -76,7 +77,6 @@ class XdataModel extends Model {
 		$_res[$list_name] = $data;
 		return $_res[$list_name];
 	}
-
 	/**
 	 * 写入单个数据
 	 * @param string $key 要存储的参数list:key
@@ -116,13 +116,10 @@ class XdataModel extends Model {
 		static $_res = array();
 		if(isset($_res[$key])) {
 			return $_res[$key];
-		}
-			
+		}	
 		$list = $this->lget($keys[0]);
-		
 		return $list ? $list[$keys[1]] : '';
 	}
-
 	/**
 	 * 传入的key参数为直接要获取的的key值
 	 * @param string $key 在配置中的key值 [必须]
